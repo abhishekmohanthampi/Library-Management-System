@@ -4,9 +4,9 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Set page background to blue */
+    
     background-color: #007bff; 
-    /* Set general body text color to white */
+
     color: white; 
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
-    box-shadow: none; /* No shadow needed since header and body are the same color */
+    box-shadow: none; 
 }
 
 header h1 {
@@ -45,6 +45,12 @@ header h1 {
     padding: 5px 10px;
     border-radius: 4px;
     transition: background-color 0.3s;
+    align-self: center;
+    justify-content: center;
+    position: fixed;       
+    bottom: 20px;          
+    left: 50%;            
+    transform: translateX(-50%);
 }
 
 #first-nav a:hover {
@@ -60,9 +66,9 @@ main {
 }
 
 main > div {
-    /* 1. Set login box background back to white */
+   
     background-color: #fff; 
-    /* 2. Re-apply padding, radius, and shadow */
+   
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
@@ -73,7 +79,7 @@ main > div {
 
 #login {
     margin-top: 0;
-    /* Login heading inside the white box should be blue */
+   
     color: #007bff; 
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -107,7 +113,7 @@ form {
 form label {
     text-align: left;
     font-weight: bold;
-    /* Labels inside the white box should be dark */
+ 
     color: #555; 
 }
 
