@@ -18,17 +18,17 @@
                 <button onclick="showForm('admin')">Admin</button>
                 <button onclick="showForm('user')">User</button>
                 <form id="userform" onsubmit="return login('user')">
-                    <label id="labeluser" for="useremail">User Email:</label>
+                    <label id="labeluser" for="useremail">User Email:(Default email:user@123.com)</label>
                     <input id="useremail" name="useremail" type="email" required placeholder="email"><br>
-                    <label for="password">Password:</label>
-                    <input id="password" name="password" type="password" required placeholder="password"><br>
+                    <label for="password">Password:(Default password:1234)</label>
+                    <input id="userpassword" name="userpassword" type="password" required placeholder="password"><br>
                     <button type="submit">Submit</button>
                 </form>
                 <form id="adminform" onsubmit="return login('admin')">
-                    <label for="adminemail" id="labeladmin">Admin Email:</label>
+                    <label for="adminemail" id="labeladmin">Admin Email:(Default:admin@123.com)</label>
                     <input id="adminemail" name="adminemail" type="email" required placeholder="email"><br>
-                    <label for="password">Password:</label>
-                    <input id="password" name="password" type="password"required placeholder="password"><br>
+                    <label for="password">Password:(Default:1234)</label>
+                    <input id="adminpassword" name="adminpassword" type="password"required placeholder="password"><br>
                     <button type="submit">Submit</button>
 
                 </form>
