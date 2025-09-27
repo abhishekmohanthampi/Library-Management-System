@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Set page background to blue */
+    background-color: #007bff; 
+    /* Set general body text color to white */
+    color: white; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#userform {
+    display: none;
+}
+
+#adminform {
+    display: none;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: none; /* No shadow needed since header and body are the same color */
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+#first-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#first-nav a:hover {
+    background-color: #0056b3;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main > div {
+    /* 1. Set login box background back to white */
+    background-color: #fff; 
+    /* 2. Re-apply padding, radius, and shadow */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#login {
+    margin-top: 0;
+    /* Login heading inside the white box should be blue */
+    color: #007bff; 
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+main button:not([type="submit"]) {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px 20px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.1s;
+    outline: none;
+}
+
+main button:not([type="submit"]):hover {
+    background-color: #1e7e34;
+    transform: translateY(-1px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+    /* Labels inside the white box should be dark */
+    color: #555; 
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+form br {
+    display: none;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
